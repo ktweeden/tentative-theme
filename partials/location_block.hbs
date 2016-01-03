@@ -1,0 +1,9 @@
+{{#get "tags" slug=name}}
+  {{#foreach tags}}
+    <div style="background-image:url({{image}})" class="sidebar-location-block">
+      <a href={{url}}>
+        <h1>{{name}}</h1>
+      </a>
+    </div>
+  {{/foreach}}
+{{/get}}

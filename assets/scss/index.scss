@@ -1,0 +1,98 @@
+@import "global_variables";
+
+.post-list-content { /* for column holding list of posts */
+  flex: 1;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2rem;
+  padding-left: 0;
+
+  .tag-title h1 {
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: $spacing;
+    margin-top: 0;
+  }
+
+  .post-excerpt { /* container for all content per individual post listing, inc header */
+    margin-top:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+
+    .preview { /*flex container for text and image preview for each post */
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .post-excerpt-date{
+        text-transform: uppercase;
+        color: $grey-font-colour;
+        padding-bottom: 0.5rem;
+        letter-spacing: $spacing;
+        text-align: right;
+        width: 100%;
+        font-weight: $font-weight;
+      }
+
+      .break-line { /* dividing line between post excerpts */
+        border-bottom: 1px solid black;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        margin-left: 16rem;
+        margin-right: 16rem;
+        width: 100%;
+      }
+
+      .preview-image { /* preview image for post preview*/
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        height: 400px;
+        min-width: 200px;
+        min-height: 125px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        background-color: grey;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: $text-overlay-colour;
+        justify-content: center;
+        align-items: center;
+
+          h1{
+            font-size: 4rem;
+            letter-spacing: $spacing;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+      }
+      .excerpt-content { /* preview excerpt */
+        margin-top: 1rem;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 200px;
+
+        .read-more {
+          letter-spacing: $spacing;
+          color: $grey-font-colour;
+          text-align: left;
+          text-transform: uppercase;
+          padding-top: 0.5rem;
+          font-weight: $font-weight;
+        }
+      }
+    }
+  }
+
+}

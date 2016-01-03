@@ -1,0 +1,41 @@
+{{!< default}}
+{{>header}}
+<main>
+  <div class="content-column">
+    <div class="post-list-content">
+      {{#is "tag"}}{{#tag}}
+      <div class="tag-title">
+        <h1>Posts tagged with&nbsp;&#35;{{name}}</h1>
+      </div>
+      {{/tag}}{{/is}}
+      {{#foreach posts}}
+      <div class="post-excerpt">
+        <div class="preview">
+          <div class="post-excerpt-date">
+            {{date format="DD MMM YYYY"}}
+          </div>
+          {{#if image}}
+          <div style="background-image: url({{image}})" class="preview-image">
+            <a href="{{{url}}}">
+              <h1>{{title}}</h1>
+            </a>
+          </div>
+          {{/if}}
+          <div class="excerpt-content">
+            {{excerpt words="100"}}...
+            <div class="read-more">
+              <a href="{{{url}}}">Read more</a>
+            </div>
+          </div>
+          <div class="break-line"></div>
+        </div>
+      </div>
+      {{/foreach}}
+      {{#if pagination}}
+      {{pagination}}
+      {{/if}}
+    </div>
+    {{>sidebar}}
+  </div>
+  {{>footer}}
+</main>

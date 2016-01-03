@@ -1,0 +1,12 @@
+<div class="read-next-container">
+  {{#prev_post}}
+    <div style="background-image:url({{image}})" class="previous-post">
+      <h1><a href ="{{url}}">{{title}}<br><i class="fa fa-angle-double-left"></i></a></h1>
+    </div>
+   {{/prev_post}}
+   {{#next_post}}
+      <div style="background-image:url({{image}})" class="next-post">
+        <h1><a href ="{{url}}">{{title}}<br><i class="fa fa-angle-double-right"></i></a></h1>
+    </div>
+   {{/next_post}}
+</div>

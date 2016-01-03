@@ -1,0 +1,27 @@
+.caption {
+  margin-top: -0.8rem;
+  text-align: center;
+  color: $grey-font-colour;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px dashed black;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+
+.content-column { /* flexbox container for (post list column, sidebar) */
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0 2rem;
+}

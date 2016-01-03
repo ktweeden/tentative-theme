@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: initial;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+@import "global_variables";
+@import "global_classes";
+@import "index";
+@import "sidebar";
+@import "header";
+@import "posts";
+@import "footer";
+@import "pagination";
+@import "read_next";

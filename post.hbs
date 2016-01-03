@@ -1,0 +1,23 @@
+{{!< default}}
+{{>header}}
+{{#post}}
+<div class="content-column">
+  <div class="post-content">
+    {{#if image}}
+    <div style="background-image: url({{image}})" class="post-image">
+      <a href="{{url}}">
+        <h1>{{title}}</h1>
+      </a>
+    </div>
+    {{/if}}
+    {{content}}
+    <div class="author-info">
+      Written by <a href="{{author.url}}">{{author}}</a> on {{date format="DD MMM YYYY"}}
+    </div>
+    {{>read_next}}
+    <div class="fb-comments" data-href="{{url absolute="true"}}" data-width="100%" data-numposts="20"></div>
+  </div>
+  {{>sidebar}}
+</div>
+{{>footer}}
+{{/post}}

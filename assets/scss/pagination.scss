@@ -1,0 +1,33 @@
+.pagination {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  justify-content: space-between;
+
+  .right-button{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    padding: 0.3rem;
+    letter-spacing: $spacing;
+    text-transform: uppercase;
+  }
+
+  .left-button{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    padding: 0.3rem;
+    letter-spacing: $spacing;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    margin: 0;
+    padding: 0.1rem 0.3rem;
+    font-weight: 200;
+  }
+}
