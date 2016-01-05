@@ -1,18 +1,16 @@
 <div class="pagination">
   {{#if next}}
+  <div class="pagination-button left-button">
     <a href="{{page_url next}}">
-      <div class="pagination-button left-button">
-        <h4><i class="fa fa-angle-double-left"></i>
-        Older</h4>
-      </div>
+        <h4><i class="fa fa-angle-double-left"></i>&nbsp;Older</h4>
     </a>
+  </div>
   {{/if}}
   {{#if prev}}
+  <div class="pagination-button right-button">
     <a href="{{page_url prev}}">
-      <div class="pagination-button right-button">
-        <h4>Newer
-        <i class="fa fa-angle-double-right"></i></h4>
-      </div>
+        <h4>Newer&nbsp;<i class="fa fa-angle-double-right"></i></h4>
     </a>
+  </div>
   {{/if}}
 </div>

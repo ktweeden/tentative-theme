@@ -244,24 +244,27 @@ h1, h2, h3, h4 {
   flex-direction: row;
   text-align: center;
   font-weight: 200;
-  text-transform: uppercase;
-  justify-content: space-between; }
+  text-transform: uppercase; }
   .pagination .pagination-button {
-    border: 1px solid black;
     margin-bottom: 1rem;
-    padding: 0.3rem;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
     .pagination .pagination-button.right-button {
-      margin-left: 3rem; }
+      margin-left: 3rem;
+      flex: 1;
+      text-align: right; }
     .pagination .pagination-button.left-button {
-      margin-right: 3rem; }
-  .pagination .pagination-button:hover {
-    background-color: #E8E8E8; }
+      margin-right: 3rem;
+      flex: 1;
+      text-align: left; }
   .pagination h4 {
     margin: 0;
-    padding: 0.1rem 0.3rem;
-    font-weight: 200; }
+    font-weight: 200;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid black;
+    display: inline; }
+    .pagination h4:hover {
+      background-color: #E8E8E8; }
 
 .read-next-container {
   display: -webkit-flex;
