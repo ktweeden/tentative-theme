@@ -41,6 +41,11 @@
     margin-bottom: 1rem;
     padding: 0.3rem;
     letter-spacing: $spacing;
+    background: inherit;
+  }
+
+  .button:hover{
+    background-color: $background-hover-colour;
   }
 
 }

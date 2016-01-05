@@ -7,22 +7,24 @@
   text-transform: uppercase;
   justify-content: space-between;
 
-  .right-button{
+  .pagination-button{
     border: 1px solid black;
     margin-bottom: 1rem;
-    margin-left: 3rem;
     padding: 0.3rem;
     letter-spacing: $spacing;
     text-transform: uppercase;
+
+    &.right-button{
+      margin-left: 3rem;
+    }
+
+    &.left-button{
+      margin-right: 3rem;
+    }
   }
 
-  .left-button{
-    border: 1px solid black;
-    margin-bottom: 1rem;
-    margin-right: 3rem;
-    padding: 0.3rem;
-    letter-spacing: $spacing;
-    text-transform: uppercase;
+  .pagination-button:hover{
+    background-color: $background-hover-colour;
   }
 
   h4 {

@@ -158,7 +158,10 @@ h1, h2, h3, h4 {
     border: 1px solid black;
     margin-bottom: 1rem;
     padding: 0.3rem;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    background: inherit; }
+  .sidebar-content .button:hover {
+    background-color: #E8E8E8; }
 
 .blog-title h1 {
   font-size: 95px;
@@ -243,20 +246,18 @@ h1, h2, h3, h4 {
   font-weight: 200;
   text-transform: uppercase;
   justify-content: space-between; }
-  .pagination .right-button {
+  .pagination .pagination-button {
     border: 1px solid black;
     margin-bottom: 1rem;
-    margin-left: 3rem;
     padding: 0.3rem;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
-  .pagination .left-button {
-    border: 1px solid black;
-    margin-bottom: 1rem;
-    margin-right: 3rem;
-    padding: 0.3rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase; }
+    .pagination .pagination-button.right-button {
+      margin-left: 3rem; }
+    .pagination .pagination-button.left-button {
+      margin-right: 3rem; }
+  .pagination .pagination-button:hover {
+    background-color: #E8E8E8; }
   .pagination h4 {
     margin: 0;
     padding: 0.1rem 0.3rem;
