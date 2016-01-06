@@ -10,6 +10,13 @@
       </a>
     </div>
     {{/if}}
+    <div class="tag-container">
+    {{#if tags}}
+      {{#foreach tags}}
+        <a href="{{url}}" class="tags">&#35;{{name}}</a>
+      {{/foreach}}
+    {{/if}}
+  </div>
     {{content}}
     <div class="author-info">
       Written by <a href="{{author.url}}">{{author}}</a> on {{date format="DD MMM YYYY"}}

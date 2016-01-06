@@ -1,7 +1,9 @@
 @import "global_variables";
 
 .sidebar-content { /* sidebar content column */
-  width: 300px;
+  @include mq-web-layout {
+    width: 300px;
+  };
   margin: 0 auto;
   border: 1px;
 

@@ -1,3 +1,5 @@
+@import "media_queries";
+
 .caption {
   margin-top: -0.8rem;
   text-align: center;
@@ -19,8 +21,13 @@
 .content-column { /* flexbox container for (post list column, sidebar) */
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  @include mq-phone-layout {
+    flex-direction: column;
+  };
+  @include mq-web-layout {
+    flex-direction: row;
+  };
+  flex-wrap: nowrap;
   max-width: 1200px;
   margin:0 auto;
   padding: 0 2rem;

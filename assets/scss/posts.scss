@@ -1,16 +1,36 @@
 @import "global_variables";
 
 .post-content { /* for column holding post */
+  @include mq-web-layout {
+    padding-right: 2rem;
+    margin-right: 2rem;
+  };
   flex: 1;
   min-width: 200px;
   margin-top: 0;
   margin-bottom: 2rem;
   margin-left: 0;
-  margin-right: 2rem;
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: 2rem;
   padding-left: 0;
+
+  .tag-container{
+    text-align: right;
+
+    .tags {
+      text-transform: uppercase;
+      color: $grey-font-colour;
+      padding-bottom: 0.5rem;
+      padding-top:0.5rem;
+      letter-spacing: $spacing;
+      width: 100%;
+      font-weight: $font-weight;
+
+      &:hover{
+        color: black;
+      }
+    }
+}
 
   .author-info {
     text-align: left;
@@ -53,7 +73,7 @@
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 1rem;
-    background-color: grey;
+    background-color: $grey-font-colour;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -62,7 +82,12 @@
     align-items: center;
 
     h1{
-      font-size: 4rem;
+      @include mq-web-layout {
+        font-size: 4rem;
+      };
+      @include mq-phone-layout {
+        font-size: 2rem;
+      };
       letter-spacing: $spacing;
       padding: 1.5rem;
     }

@@ -1,16 +1,19 @@
 @import "global_variables";
 
+
 .post-list-content { /* for column holding list of posts */
   flex: 1;
   min-width: 200px;
   margin-top: 0;
   margin-bottom: 2rem;
   margin-left: 0;
-  margin-right: 2rem;
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: 2rem;
   padding-left: 0;
+  @include mq-web-layout {
+    padding-right: 2rem;
+    margin-right: 2rem;
+  };
 
   .tag-title h1 {
     text-transform: uppercase;
@@ -61,7 +64,7 @@
         margin-right: 0;
         margin-top: 0;
         margin-bottom: 1rem;
-        background-color: grey;
+        background-color: $grey-font-colour;
         background-size: cover;
         background-position: center;
         text-align: center;
@@ -70,7 +73,12 @@
         align-items: center;
 
           h1{
-            font-size: 4rem;
+            @include mq-web-layout {
+              font-size: 4rem;
+            };
+            @include mq-phone-layout {
+              font-size: 2rem;
+            };
             letter-spacing: $spacing;
             padding-left: 2rem;
             padding-right: 2rem;

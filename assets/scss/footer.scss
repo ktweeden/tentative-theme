@@ -1,10 +1,16 @@
 .theme-info {
-  text-align: right;
+  @include mq-web-layout {
+    text-align: right;
+  };
+  @include mq-phone-layout {
+    text-align: center;
+  };
   color: $grey-font-colour;
   text-transform: uppercase;
   font-weight: $font-weight;
   letter-spacing: $spacing;
   padding-top: 1rem;
   padding-right: 1rem;
+  padding-left: 1rem;
   margin-bottom: 1rem;
 }

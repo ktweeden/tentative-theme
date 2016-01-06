@@ -1,0 +1,23 @@
+$max-vertical-layout-width-portrait: 605px;
+$max-horizontal-layout-width-landscape: 605px;
+
+
+@mixin mq-phone-layout {
+  // vertical design
+  @media
+    only screen and (orientation: portrait) and (max-device-width: #{$max-vertical-layout-width-portrait - 1}),
+    only screen and (orientation: landscape) and (max-device-width: #{$max-horizontal-layout-width-landscape - 1})
+  {
+    @content;
+  }
+}
+
+@mixin mq-web-layout {
+  // horizontal design 
+  @media
+    only screen and (orientation: portrait) and (min-device-width: #{$max-vertical-layout-width-portrait}),
+    only screen and (orientation: landscape) and (min-device-width: #{$max-horizontal-layout-width-landscape})
+  {
+    @content;
+  }
+}
