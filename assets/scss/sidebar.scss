@@ -25,12 +25,16 @@
     margin-top: 1.1rem;
     margin-right: 0;
     margin-bottom: 0.5rem;
-    background-color: grey;
+    background-color: gray;
     background-size: cover;
     background-position: center;
     text-align: center;
     color: $text-overlay-colour;
     letter-spacing: $spacing;
+
+    &:hover {
+      background-blend-mode: luminosity;
+    }
   }
 
   .break-line { /* dividing line beteen currently in and past locations */
